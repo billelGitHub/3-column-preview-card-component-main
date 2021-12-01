@@ -1,0 +1,74 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+body {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+.content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.sedans {
+    background-color: var(--Bright-orange);
+    padding: 2em;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    
+}
+.suvs {
+    background-color: var(--Dark-cyan);
+    padding: 2em;
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+    padding: 2em;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+div p {
+    color: var(--Transparent-white);
+}
+.sedans button {
+    color: var(--Bright-orange);
+}
+.suvs button {
+    color: var(--Dark-cyan);
+}
+
+.luxury button {
+    color: var(--Very-dark-cyan);
+}
+
+
+@media (min-width: 960px) {
+    .content {
+        width: 800px;
+        height: 100vh;
+    }
+    .sedans {
+        
+        border-bottom-left-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0;
+    }
+
+    .luxury {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+}
+
